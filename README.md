@@ -9,10 +9,10 @@ secure buffer (std::vector<uint8_t> + очистка)
 7. Синхронный многопоточный сервер
 
 Чистая пересборка:
-rm -rf build
-mkdir build && cd build
-cmake -DCMAKE_BUILD_TYPE=Debug ..
-cmake --build . --parallel
+1. rm -rf build
+2. mkdir build && cd build
+3. cmake -DCMAKE_BUILD_TYPE=Debug ..
+4. cmake --build . --parallel
 
 Тесты:
 ctest --output-on-failure
