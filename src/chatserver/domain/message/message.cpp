@@ -31,6 +31,17 @@ Message::Message(
     , text_(std::move(text))
     , createdAt_(createdAt) {}
 
+// Message::Message(
+//     UserId senderId,
+//     MessageText text,
+//     Timestamp createdAt
+// ) noexcept
+//     : id_(MessageId{})              // ID отсутствует до сохранения
+//     , senderId_(std::move(senderId))
+//     , text_(std::move(text))
+//     , createdAt_(std::move(createdAt)) {}
+
+
 const MessageId& Message::id() const {
     return id_;
 }
